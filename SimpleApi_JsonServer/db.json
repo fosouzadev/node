@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Caderno 10 matérias",
+      "price": 9.99
+    }
+  ]
+}
