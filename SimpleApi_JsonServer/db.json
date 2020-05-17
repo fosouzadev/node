@@ -9,6 +9,11 @@
       "id": 2,
       "name": "Caderno 10 matérias",
       "price": 9.99
+    },
+    {
+      "name": "Iphone 6S 32GB Branco",
+      "price": "2699.99",
+      "id": 3
     }
   ]
 }
