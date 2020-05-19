@@ -30,7 +30,9 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { ProductReadComponent } from './components/product/product-read/product-read.component';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
-import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component'
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { RedDirective } from './directives/red.directive';
+import { ForDirective } from './directives/for.directive'
 
 
 registerLocaleData(localePt)
@@ -46,7 +48,9 @@ registerLocaleData(localePt)
     ProductCreateComponent,
     ProductReadComponent,
     ProductUpdateComponent,
-    ProductDeleteComponent
+    ProductDeleteComponent,
+    RedDirective,
+    ForDirective
   ],
   imports: [
     BrowserModule,
