@@ -25,7 +25,7 @@ let marca : string | null
 marca = null
 
 
-// podemos usar o union types para deixar opcional propriedades de objetos
+// podemos usar o union types para deixar opcional propriedades de tipos
 type Aluno = {
     id: number,
     name: string | null
