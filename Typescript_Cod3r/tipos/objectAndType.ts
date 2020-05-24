@@ -50,6 +50,11 @@ console.log(funcionario2.baterPonto(9))
 
 
 // Podemos criar um alias para um tipo, para não repetir a definição do tipo como fizemos em funcionario1 e funcionario2
+// a diferença entre tipo e class:
+//      * sem definição do corpo dos métodos
+//      * sem modificadores de acesso
+//      * sem construtor
+//      * sem instanciar
 
 type Funcionario = {
     supervisores: string[],
