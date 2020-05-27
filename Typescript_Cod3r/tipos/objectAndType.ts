@@ -7,7 +7,7 @@ console.log(usuario1, typeof usuario1)
 // usuario1 = { abc: '' }
 
 
-// podemos definir de forma explicita os tipos
+// podemos definir de forma explicita os tipos em variveis e parametros
 let usuario2: { nome: string, idade: number }
 usuario2 = { nome: 'felipe', idade: 30 }
 console.log(usuario2, typeof usuario2)

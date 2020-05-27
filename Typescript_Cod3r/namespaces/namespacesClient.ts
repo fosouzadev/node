@@ -1,5 +1,8 @@
-///<reference path="geometriaCirc.ts"/>
-///<reference path="geometriaRect.ts"/>
+// /// <reference path="geometriaCirc.ts" />
+// /// <reference path="geometriaRect.ts" />
+
+ console.log(Geometria.Area.circunferencia(10))
+ console.log(Geometria.Area.retangulo(10, 20))
 
 
 // consumindo namespaces de outros arquivos
@@ -10,12 +13,10 @@
 //          <script src="build/namespaces/namespacesClient.js"></script>
 
 //      * podemos compilar todos os arquivos.ts em um único arquivo.js manualmente com "tsc -w --outFile"
-//          tsc -w --outFile [nomeArquivoSaida.js] arquivo.ts arquivo2.ts
+//          tsc -w --outFile [nomeArquivoSaida.js] [arquivo1.ts] [arquivo2.ts]
 
 //      * podemos incluir referencias no arquivo principal, assim a compilação cuida dos apontamentos
 //          usamos nesse arquivo esse exemplo, usando três barras ///
-
-console.log(Geometria.Area.circunferencia(10))
-console.log(Geometria.Area.retangulo(10, 20))
-
-// erro, pesquisar sobre namspaces do typescript
+//          tsc -w --outFile [nomeArquivoSaida.js] [arquivoComReferencias.ts]
+//          ///<reference path="geometriaCirc.ts"/>
+//          ///<reference path="geometriaRect.ts"/>

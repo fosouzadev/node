@@ -23,7 +23,7 @@ console.log(PI)
 
 
 // *** aninhar namespaces, para acessar os namespaces internos é necessário exportá-los
-namespace Geometria {
+namespace Geometria1 {
     export namespace Area2 {
         const PI = 3.14
 
@@ -38,5 +38,5 @@ namespace Geometria {
 }
 
 // acessamos atraves do nome do namespace
-console.log(Geometria.Area2.circunferencia(10))
-console.log(Geometria.Area2.retangulo(10, 20))
+console.log(Geometria1.Area2.circunferencia(10))
+console.log(Geometria1.Area2.retangulo(10, 20))
