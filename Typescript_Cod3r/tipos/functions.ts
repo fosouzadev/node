@@ -29,3 +29,11 @@ console.log(soma(1, 3))
 let semRetorno: (nm: string) => void
 semRetorno = notReturn
 semRetorno('felipe')
+
+
+// podemos definir a assinatura da function como parametro
+function somaDoisNumeros(callback: (n1: number, n2: number) => number, n1: number, n2: number){
+    console.log(callback(n1, n2))
+}
+
+somaDoisNumeros(sum, 5, 6)
