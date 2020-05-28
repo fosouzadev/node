@@ -5,8 +5,8 @@ imprimir<{ nome: string, idade: number }>([
 ])
 
 // type
-type Fazendeiro = { nome: string, idade: number }
-imprimir<Fazendeiro>([
+type Fazendeiro<A, B> = { nome: A, idade: B }
+imprimir<Fazendeiro<string, number>>([
     { nome: 'Joao', idade: 44 },
     { nome: 'Maria', idade: 53 }
 ])
