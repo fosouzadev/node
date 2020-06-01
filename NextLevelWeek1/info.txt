@@ -1,0 +1,8 @@
+# [back] package ts-node, sobe o server express
+    npx ts-node src/server.ts
+
+# [back] package ts-node-dev, sobe o server
+    npx ts-node-dev src/server.ts
+
+# [front] ferramenta somente executada que cria um projeto React completo
+    npx create-react-app web --template=typescript
