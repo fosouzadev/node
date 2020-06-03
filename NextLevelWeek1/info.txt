@@ -38,3 +38,11 @@
 # [back] incluindo CORS
     npm i cors
     npm i @types/cors -D
+
+# [front] configuração de emmet javascript VsCode
+    [Windows] + [Ctrl] + [P] : Open Settings (JSON), incluir as linha abaixo
+    "emmet.syntaxProfiles": { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+# [front] JSX, permite colocar HTML dentro do javascript
+    arquivo com extensão .tsx ou .jsx
