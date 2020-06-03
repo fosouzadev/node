@@ -1,8 +1,33 @@
 # [back] package ts-node, sobe o server express
-    npx ts-node src/server.ts
+    npx ts-node --ignore-watch node-modules src/server.ts
 
 # [back] package ts-node-dev, sobe o server
-    npx ts-node-dev src/server.ts
+    npx ts-node-dev --ignore-watch node-modules  src/server.ts
 
 # [front] ferramenta somente executada que cria um projeto React completo
     npx create-react-app web --template=typescript
+
+# [database] Knex.js, biblioteca de integração com base de dados
+    npm install knex
+    npm install sqlite3
+
+    # utilizando migrations
+        npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+
+    # instalar extensão do VsCode SQLite para visualizar o database criado
+        [Windows] + [Ctrl] + [P] : SQLite -> Open Database
+        Ira abrir o SQLite explorer na barra lateral com o resultado da base
+    
+    # popular base de dados com valores default, utilizamos o recurso seed do Knex
+        knex --knexfile knexfile.ts seed:run
+
+# [back] tratar diretorios no node, usar biblioteca nativa
+    import path from 'path'
+    path.resolve()
+
+# [back] padrão da comunidade para rotas em controllers
+    index: lista de itens
+    show: item unico
+    create ou store: criar item
+    update: atualizar item
+    delete ou destory: excluir item
