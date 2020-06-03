@@ -17,6 +17,9 @@
     # instalar extensão do VsCode SQLite para visualizar o database criado
         [Windows] + [Ctrl] + [P] : SQLite -> Open Database
         Ira abrir o SQLite explorer na barra lateral com o resultado da base
+        
+        Para executar uma query, botão direito na base, new query
+        [Windows] + [Ctrl] + [P] : SQLite -> Run Query
     
     # popular base de dados com valores default, utilizamos o recurso seed do Knex
         knex --knexfile knexfile.ts seed:run
@@ -31,3 +34,7 @@
     create ou store: criar item
     update: atualizar item
     delete ou destory: excluir item
+
+# [back] incluindo CORS
+    npm i cors
+    npm i @types/cors -D
