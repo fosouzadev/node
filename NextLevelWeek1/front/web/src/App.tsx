@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'; // useState retorna array [valor, function para atualizar]
 import './App.css';
-import Header from './Header'
+import Routes from './routes'
 
 function App() {
   return (
     <div>
-      <Header title="Hello World" />
-      <h1>Conteúdo da aplicação</h1>
+      <Routes />
     </div>
   );
 }

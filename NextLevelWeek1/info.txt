@@ -46,3 +46,18 @@
 
 # [front] JSX, permite colocar HTML dentro do javascript
     arquivo com extensão .tsx ou .jsx
+
+# [front] pacote de ícones do react
+    npm i react-icons
+
+# [front] pacote para roteamento do react
+    npm i react-router-dom
+    npm i @types/react-router-dom -D
+
+# [front] pacote para integração com mapa
+    npm i leaflet 
+    npm i react-leaflet
+    npm i @types/react-leaflet -D
+
+# [front] pacote para fazer requisições no backend
+    npm i axios
