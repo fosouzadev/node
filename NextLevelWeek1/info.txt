@@ -62,12 +62,9 @@
 # [front] pacote para fazer requisições no backend
     npm i axios
 
-# [mobile] pacote expo-cli para rodar app no celular
-    npm i -g expo-cli
-    criar projeto no mobile
-    expo init mobile
+# [backend] pacote para upload de imagens
+    npm i multer -D
+    npm i @types/multer -D
 
-# [mobile] todos os elementos são display flex, não tem cascata de estilo (css)
-
-# [mobile] pacote que permite utilizar as fontes do google
-    expo install expo-font @expo-google-fonts/[nomeFonte]
+# [front] pacote de arrastar imagem para area especifica
+    npm i react-dropzone 
