@@ -68,3 +68,10 @@
 
 # [front] pacote de arrastar imagem para area especifica
     npm i react-dropzone 
+
+# [front] pacote de validação de campos     
+    npm i yup
+
+# [back] pacote de validação de dados
+    npm i celebrate
+    npm i @types/hapi__joi
