@@ -1,0 +1,39 @@
+// *** string -> number
+
+let n1 = 1334.44
+let n2 = 1234
+
+console.log('\nconverter para string')
+console.log(n1.toString())
+console.log(`${n2}`)
+console.log(String(n1))
+
+console.log('\nconverter string para number explicita')
+console.log(Number.parseInt('5681.4587'), parseInt('5681.4587'))
+console.log(Number.parseFloat('45674.74'), parseFloat('45674.74'))
+console.log(Number('45674.74'))
+
+console.log('\nconverter string para number de forma implicita')
+console.log('10' / 2)
+console.log('10#' / 2)
+console.log(Number.isNaN('10' / 2), Number.isNaN('10#' / 2))
+
+console.log('\nconverter para outras bases')
+console.log(n1.toString(2))     // binario
+console.log(n1.toString(16))    // hexadecimal
+
+console.log('\nfixar casas decimais')
+console.log((n1 / 3).toFixed(2))
+
+console.log('\nfixar tamanho do numero, nesse caso o número completo terá 6 digitos, juntanto o lado inteiro com o decimal')
+console.log((n1 / 3).toPrecision(6))
+
+console.log('\nverificar tipo')
+console.log(typeof n1)
+console.log(Number.isInteger(n1))
+console.log(Number.isInteger(n2))
+
+console.log('\ndivisão por zero retorna Infinity')
+console.log(n1 / 0)
+console.log((n1 / 0) === Infinity)
+console.log(Number.isFinite(n1 / 0))
