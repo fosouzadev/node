@@ -1,4 +1,4 @@
-// *** var : possui escopo global e de function
+// *** var : possui escopo global e de function, possui o Hoisting, onde é colocada antes de qualque expressão do codigo, podendo ser usada antes da linha em que foi declarada
 var v1 = 'var global 1'
 
 function testeVar() {
