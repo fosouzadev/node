@@ -1,3 +1,5 @@
+// por padrão toda function retorna undefined
+
 // *** function comum
 function teste1() {
     console.log('teste1')
