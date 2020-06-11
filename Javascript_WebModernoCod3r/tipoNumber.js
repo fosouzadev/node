@@ -37,3 +37,22 @@ console.log('\ndivisão por zero retorna Infinity')
 console.log(n1 / 0)
 console.log((n1 / 0) === Infinity)
 console.log(Number.isFinite(n1 / 0))
+
+
+// formatar para R$ PT-BR
+function converterReal(valor, incluirTipoMoeda){
+    let valorFormatado
+
+    if (incluirTipoMoeda)
+        valorFormatado = valor.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+    else
+        valorFormatado = valor.toLocaleString('pt-br', { minimumFractionDigits: 2 })
+                         
+    return valorFormatado.replace('.', '#').replace(',', '.').replace('#', ',');
+}
+
+//com R$
+console.log( converterReal(23450.30000000000000004, true) )
+
+//sem R$
+console.log( converterReal(23450.30000000000000004, false) )

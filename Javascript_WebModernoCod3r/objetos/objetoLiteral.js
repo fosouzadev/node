@@ -17,3 +17,11 @@ console.log(prod2, prod2.desconto, prod2['nome'])
 // *** excluir o atributo de um objeto
 delete prod2.preco
 console.log(prod2)
+
+
+// *** tipos de functions em objeto literal
+const obj = {
+    f1() { },
+    f2: function() { },
+    f3: () => { }
+}
