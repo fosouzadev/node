@@ -3,6 +3,7 @@
 // Crie uma função que recebe os comprimentos dos três lados de um triângulo e retorne sua classificação quanto
 // ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemáticas de existência de um
 // triângulo).
+// Resposta : OK
 
 function tipoTriangulo(l1, l2, l3) {
     if (l1 === l2 && l1 === l3)

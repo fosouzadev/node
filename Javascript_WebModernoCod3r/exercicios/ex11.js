@@ -5,6 +5,7 @@
 // Prevalecem as últimas regras sobre as primeiras.
 // Partindo daí elabore uma função que recebe um ano e calcula se ele é ano bissexto, imprimindo no console a
 // mensagem e retornando true ou false.
+// Resposta: OK
 
 const anoBissexto = (ano) => {
     if (ano % 400 === 0 || (ano % 100 !== 0 && ano % 4 === 0)) {

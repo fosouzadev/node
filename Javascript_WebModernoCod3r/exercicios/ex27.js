@@ -10,7 +10,7 @@ function calcCrescimento({ altura: altura1, txCresc: txCresc1 }, { altura: altur
         return analise
     }
 
-    
+    // ?????
 }
 
 console.log(calcCrescimento({ altura: 110, txCresc: 2 }, { altura: 100, txCresc: 3 }))

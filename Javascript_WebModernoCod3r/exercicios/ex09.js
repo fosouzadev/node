@@ -41,3 +41,24 @@ console.log(`${82} = ${validarNota(82)}`)
 console.log(`${83} = ${validarNota(83)}`)
 console.log(`${84} = ${validarNota(84)}`)
 console.log(`${85} = ${validarNota(85)}`)
+
+console.log(`${100} = ${validarNota(100)}`)
+console.log(`${30} = ${validarNota(30)}`)
+console.log(`${38} = ${validarNota(38)}`)
+console.log(`${88} = ${validarNota(88)}`)
+console.log(`${61} = ${validarNota(61)}`)
+
+// Respota: OK, porém existe uma forma melhor para descobrir o proximo multiplo
+
+function proxMultiploDeCinco(nota) {
+    // diferença do valor atual até o proximo multiplo
+    const diferenca = 5 - (nota % 5)
+
+    return nota + diferenca
+}
+
+console.log('\n\n', proxMultiploDeCinco(100))
+console.log(proxMultiploDeCinco(30))
+console.log(proxMultiploDeCinco(38))
+console.log(proxMultiploDeCinco(88))
+console.log(proxMultiploDeCinco(61))

@@ -3,6 +3,7 @@
 // comprador queira o hatch, retorne: “Compra efetuada com sucesso”. Nas outras opções, retorne: “Tem certeza
 // que não prefere este modelo?”. Caso seja especificado um modelo que não está disponível, retorne no console:
 // “Não trabalhamos com este tipo de automóvel aqui”.
+// Resposta : OK
 
 function lojaCarro(modelo) {
     switch (modelo) {
@@ -16,5 +17,7 @@ function lojaCarro(modelo) {
 }
 
 console.log(lojaCarro('hatch'))
+console.log(lojaCarro('motocicleta'))
 console.log(lojaCarro('sedan'))
+console.log(lojaCarro('caminhão'))
 console.log(lojaCarro('bike'))

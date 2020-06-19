@@ -5,6 +5,7 @@
 // C : 20%
 // Faça uma função que leia o plano de trabalho e o salário atual de um funcionário e calcula e imprime o seu
 // novo salário. Use a estrutura switch e faça um caso default que indique que o plano é inválido.
+// Resposta: OK
 
 function aumento(plano, salario) {
     switch (plano) {

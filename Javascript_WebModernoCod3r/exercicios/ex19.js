@@ -9,6 +9,7 @@
 // Implemente uma função que receba como parâmetros o código do item pedido, a quantidade e calcule o valor
 // a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item. Use o
 // comando switch. Crie um caso default para produto não existente.
+// Resposta: OK
 
 const cardapio = [
     { codigo: 100, descricao: 'Cachorro Quente', valor: 3.00 },

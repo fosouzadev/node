@@ -1,4 +1,5 @@
 // 12) Faça um algoritmo que calcule o fatorial de um número.
+// Resposta: OK
 
 const fatorial = (numero) => {
     if (numero == 0 || numero == 1)

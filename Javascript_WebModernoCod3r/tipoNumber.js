@@ -38,8 +38,23 @@ console.log(n1 / 0)
 console.log((n1 / 0) === Infinity)
 console.log(Number.isFinite(n1 / 0))
 
+console.log('\nexponenciação')
+console.log(Math.pow(n1, 2))
+console.log(n1 ** 2)
 
-// formatar para R$ PT-BR
+console.log('\nproximo multiplo')
+function proxMultiploDeCinco(nota) {
+    // diferença do valor atual até o proximo multiplo
+    const diferenca = 5 - (nota % 5)
+
+    return nota + diferenca
+}
+console.log(proxMultiploDeCinco(30))
+console.log(proxMultiploDeCinco(38))
+console.log(proxMultiploDeCinco(88))
+console.log(proxMultiploDeCinco(61))
+
+console.log('\nformatar para R$ PT-BR')
 function converterReal(valor, incluirTipoMoeda){
     let valorFormatado
 
