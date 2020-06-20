@@ -14,6 +14,16 @@ function validarNotas(codigoAluno, n1, n2, n3) {
     return `$Aluno ${codigoAluno} Notas ${n1} ${n2} ${n3} Média ${media} Status ${media >= 5 ? 'Aprovado' : 'Reprovado'}`
 }
 
-console.log(validarNotas(1, 7, 3, 9))
-console.log(validarNotas(1, 9, 3, 7))
-console.log(validarNotas(1, 3, 9, 7))
+// Resposta : OK, mas a function pode ser melhorada
+function validarNotas2(codigoAluno, n1, n2, n3) {
+    const [nota1, nota2, nota3] = [n1, n2, n3].sort((a, b) => a < b ? 1 : a == b ? 0 : -1)
+    const pesoMaiorNota = 4, pesoSimples = 3
+    const media = (nota1 * pesoMaiorNota + nota2 * pesoSimples + nota3 * pesoSimples) / (pesoMaiorNota + pesoSimples + pesoSimples)
+
+    return `$Aluno ${codigoAluno} Notas ${n1} ${n2} ${n3} Média ${media} Status ${media >= 5 ? 'Aprovado' : 'Reprovado'}`
+}
+
+console.log(validarNotas2(1, 7, 3, 9))
+console.log(validarNotas2(1, 9, 3, 7))
+console.log(validarNotas2(1, 3, 9, 7))
+console.log(validarNotas2(123, 2.8, 6, 3.5))
