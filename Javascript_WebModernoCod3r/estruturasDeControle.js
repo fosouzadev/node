@@ -36,3 +36,7 @@ for (let i = 0; i < 10; i++)
 const notas = [6, 7, 9, 8]
 for (let i in notas)
     console.log(i, notas[i])
+
+const pessoa = { nome: 'felipe', idade: 30 }
+for (let attr in pessoa)
+    console.log(attr)

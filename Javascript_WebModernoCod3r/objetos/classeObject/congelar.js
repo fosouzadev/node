@@ -5,13 +5,15 @@ const pessoa = {
     idade: 30
 }
 
-// permite
+// permite tudo
 pessoa.nome = 'felipe souza'
 console.log(pessoa, 'Está congelado: ', Object.isFrozen(pessoa))
 
 // congelar
 Object.freeze(pessoa)
 
-// não permite
+// não permite : editar, incluir e excluir atributo
 pessoa.nome = 'felipe oliveira de souza'
+pessoa.email = 'flp@teste.com'
+delete pessoa.nome
 console.log(pessoa, 'Está congelado: ', Object.isFrozen(pessoa))
