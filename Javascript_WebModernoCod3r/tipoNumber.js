@@ -54,6 +54,14 @@ console.log(proxMultiploDeCinco(38))
 console.log(proxMultiploDeCinco(88))
 console.log(proxMultiploDeCinco(61))
 
+// inverter sem usar variavel auxiliar
+console.log('\ninverter valor de variaveis sem usar auxiliar')
+console.log('antes', n1, n2)
+n1 = n1 + n2 // 9
+n2 = n1 - n2 // 9 - 5 = 4
+n1 = n1 - n2 // 9 - 4 = 5
+console.log('depois', n1, n2)
+
 console.log('\nformatar para R$ PT-BR')
 function converterReal(valor, incluirTipoMoeda){
     let valorFormatado

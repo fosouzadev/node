@@ -28,7 +28,32 @@ function progressaoGeometrica(n, a1, r) {
     console.log(soma, nums)
 }
 
-progressaoAritmetica(4, 1, 4)
-progressaoAritmetica(4, 2, 4)
+// Resposta : OK, mas pode ser melhorada
+function progressaoAritmetica2(n, a1, r) {
+    let nums = []
 
-progressaoGeometrica(6, 2, 2)
+    for (let i = 0; i < n; i++)
+        nums.push(a1 + (r * i))
+
+    // formula s = (qtdeTermos * (primeiroTermo + ultimoTermpo)) / 2
+    const soma = (n * (a1 + nums[nums.length - 1])) / 2
+
+    console.log('Aritimética', soma, nums)
+}
+
+function progressaoGeometrica2(n, a1, r) {
+    let nums = []
+
+    for (let i = 0; i < n; i++)
+        nums.push(a1 * (r ** i))
+
+    // q = razao elevada a qtdeTermos
+    // s = (primeiroTermo * (q - 1)) / (razao - 1)
+    const soma = (a1 * ((r ** n) - 1)) / (r - 1)
+
+    console.log('Geométrica', soma, nums)
+}
+
+progressaoAritmetica2(10, 10, 15)
+
+progressaoGeometrica2(10, 5, 3)

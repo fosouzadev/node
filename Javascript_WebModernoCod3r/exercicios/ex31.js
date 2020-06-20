@@ -1,5 +1,6 @@
 // 31) Escrever um algoritmo que percorre um vetor de inteiros, conta quantos números negativos há nesse vetor
 // e imprime a quantidade no console.
+// Resposta: OK
 
 const numeros = [-1, 4, 3, 4, -6, 1, 3, 4, 5, -2]
 

@@ -1,5 +1,6 @@
 // 34) Construa uma função que receberá duas Strings de tamanhos variados e que retornará True ou False caso
 // todos os caracteres (independentemente de ser maiúsculo ou minúsculo) estejam contidos em ambas palavras.
+// Resposta: OK
 
 function validar(str1, str2) {
     str1 = str1.toLowerCase()
@@ -25,3 +26,4 @@ function validar(str1, str2) {
 console.log(validar('romA', 'aMor'))
 console.log(validar('aaaaaa', 'a'))
 console.log(validar('aaaaaa', 'ab'))
+console.log(validar('abc', 'cba'))
