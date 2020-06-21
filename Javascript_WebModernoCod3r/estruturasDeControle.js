@@ -40,3 +40,9 @@ for (let i in notas)
 const pessoa = { nome: 'felipe', idade: 30 }
 for (let attr in pessoa)
     console.log(attr)
+
+// *** foreach
+const notas2 = [6, 7, 9, 8]
+notas2.forEach((valor, indice, array) => {
+    console.log(valor, indice, array)
+})
