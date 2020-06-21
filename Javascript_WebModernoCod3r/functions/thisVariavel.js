@@ -23,7 +23,7 @@ const obj1 = {
     f4: () => this
 }
 
-// arrow function criada em classe, tem o this apontando para o objeto
+// arrow function criada em classe ou função construtora, tem o this apontando para o objeto
 class Teste { f5 = () => this }
 const obj2 = new Teste
 

@@ -5,6 +5,7 @@ console.log(global === module.exports)
 
 console.log('\n Escopo de módulo, cada arquivo é um módulo')
 console.log(this === module.exports)
+console.log(this === exports)
 
 
 // *** variávels existem localmente, não são inseridas em global e nem em module.exports
