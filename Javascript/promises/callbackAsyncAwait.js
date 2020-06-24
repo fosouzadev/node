@@ -42,15 +42,20 @@ function obterEndereco(idUsuario) {
     })
 }
 
-(
-    async () => {
-        const usuario = await obterUsuario(idUsuario)
-        const telefone = await obterTelefone(0)
-        const endereco = await obterEndereco(idUsuario)
+const getClient = async () => {
+    try {
+        const result = await Promise.all([
+            obterUsuario(idUsuario),
+            obterTelefone(idUsuario),
+            obterEndereco(idUsuario)
+        ])
 
-        console.log('Usuario', usuario)
-        console.log('Telefone', telefone)
-        console.log('Endereço', endereco)
+        return { ...result[0], ...result[1], ...result[2] }
+    } catch (error) {
+        return `*error: ${error}`
     }
-)()
-.catch(erro => console.log(erro))
+}
+
+getClient()
+    .then(cliente => console.log(cliente))
+    .catch(erro => console.log(erro))
