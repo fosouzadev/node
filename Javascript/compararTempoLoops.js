@@ -32,3 +32,13 @@ dados.forEach(i => {
 })
 console.log(soma)
 console.timeEnd('foreach')
+
+console.time('while')
+soma = 0
+let i = 0
+while (i < dados.length) {
+    soma += (dados[i] * 100 / 4 * 2)
+    ++i
+}
+console.log(soma)
+console.timeEnd('while')
