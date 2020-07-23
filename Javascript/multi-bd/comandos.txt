@@ -1,0 +1,12 @@
+
+# Postgres no Docker
+
+    docker run --name postgres -e POSTGRES_USER=felipe -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgresDocker -p 5432:5432 -d postgres
+
+# MongoDB no Docker
+
+    docker run --name mongodb_auth -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=felipe -e MONGO_INITDB_ROOT_PASSWORD=mongodb -d mongo:4
+
+# Interface gráfica para databases, ou utilizar Azure Data Studio
+
+    docker run --name adminer -p 8080:8080 --link postgres:postgres -d adminer
